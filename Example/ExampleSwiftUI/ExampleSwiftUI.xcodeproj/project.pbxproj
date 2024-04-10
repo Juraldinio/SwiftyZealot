@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA98AB9A2BC6A3DB00200CC2 /* Zealot in Frameworks */ = {isa = PBXBuildFile; productRef = DA98AB992BC6A3DB00200CC2 /* Zealot */; };
 		DAE2F03D2BC699F300A5AE77 /* ExampleSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE2F03C2BC699F300A5AE77 /* ExampleSwiftUIApp.swift */; };
 		DAE2F03F2BC699F300A5AE77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE2F03E2BC699F300A5AE77 /* ContentView.swift */; };
 		DAE2F0412BC699F300A5AE77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE2F0402BC699F300A5AE77 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAE2F04C2BC6A14100A5AE77 /* Zealot in Frameworks */,
+				DA98AB9A2BC6A3DB00200CC2 /* Zealot in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +89,7 @@
 			name = ExampleSwiftUI;
 			packageProductDependencies = (
 				DAE2F04B2BC6A14100A5AE77 /* Zealot */,
+				DA98AB992BC6A3DB00200CC2 /* Zealot */,
 			);
 			productName = ExampleSwiftUI;
 			productReference = DAE2F0392BC699F300A5AE77 /* ExampleSwiftUI.app */;
@@ -117,7 +120,7 @@
 			);
 			mainGroup = DAE2F0302BC699F200A5AE77;
 			packageReferences = (
-				DAE2F04A2BC6A14100A5AE77 /* XCLocalSwiftPackageReference "../../ZealotLibrary" */,
+				DA98AB982BC6A3DB00200CC2 /* XCRemoteSwiftPackageReference "SwiftyZealot" */,
 			);
 			productRefGroup = DAE2F03A2BC699F300A5AE77 /* Products */;
 			projectDirPath = "";
@@ -355,14 +358,23 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		DAE2F04A2BC6A14100A5AE77 /* XCLocalSwiftPackageReference "../../ZealotLibrary" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../ZealotLibrary;
+/* Begin XCRemoteSwiftPackageReference section */
+		DA98AB982BC6A3DB00200CC2 /* XCRemoteSwiftPackageReference "SwiftyZealot" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juraldinio/SwiftyZealot";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DA98AB992BC6A3DB00200CC2 /* Zealot */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA98AB982BC6A3DB00200CC2 /* XCRemoteSwiftPackageReference "SwiftyZealot" */;
+			productName = Zealot;
+		};
 		DAE2F04B2BC6A14100A5AE77 /* Zealot */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Zealot;

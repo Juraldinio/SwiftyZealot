@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,7 @@
 		DA42DF972BC5CBEF00339354 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DA42DF962BC5CBEF00339354 /* Base */; };
 		DA42DF992BC5CBF000339354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA42DF982BC5CBF000339354 /* Assets.xcassets */; };
 		DA42DF9C2BC5CBF000339354 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DA42DF9B2BC5CBF000339354 /* Base */; };
-		DA42DFA82BC5E53900339354 /* Zealot in Frameworks */ = {isa = PBXBuildFile; productRef = DA42DFA72BC5E53900339354 /* Zealot */; };
+		DA98AB972BC6A38700200CC2 /* Zealot in Frameworks */ = {isa = PBXBuildFile; productRef = DA98AB962BC6A38700200CC2 /* Zealot */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA42DFA82BC5E53900339354 /* Zealot in Frameworks */,
+				DA98AB972BC6A38700200CC2 /* Zealot in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 			);
 			name = ExampleUIKit;
 			packageProductDependencies = (
-				DA42DFA72BC5E53900339354 /* Zealot */,
+				DA98AB962BC6A38700200CC2 /* Zealot */,
 			);
 			productName = ExampleUIKit;
 			productReference = DA42DF8C2BC5CBEF00339354 /* ExampleUIKit.app */;
@@ -125,7 +125,7 @@
 			);
 			mainGroup = DA42DF832BC5CBEF00339354;
 			packageReferences = (
-				DA42DFA32BC5CD3E00339354 /* XCLocalSwiftPackageReference "../../ZealotLibrary" */,
+				DA98AB952BC6A30400200CC2 /* XCRemoteSwiftPackageReference "SwiftyZealot" */,
 			);
 			productRefGroup = DA42DF8D2BC5CBEF00339354 /* Products */;
 			projectDirPath = "";
@@ -382,17 +382,21 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		DA42DFA32BC5CD3E00339354 /* XCLocalSwiftPackageReference "../../ZealotLibrary" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../ZealotLibrary;
+/* Begin XCRemoteSwiftPackageReference section */
+		DA98AB952BC6A30400200CC2 /* XCRemoteSwiftPackageReference "SwiftyZealot" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juraldinio/SwiftyZealot";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DA42DFA72BC5E53900339354 /* Zealot */ = {
+		DA98AB962BC6A38700200CC2 /* Zealot */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DA42DFA32BC5CD3E00339354 /* XCLocalSwiftPackageReference "../../ZealotLibrary" */;
+			package = DA98AB952BC6A30400200CC2 /* XCRemoteSwiftPackageReference "SwiftyZealot" */;
 			productName = Zealot;
 		};
 /* End XCSwiftPackageProductDependency section */
